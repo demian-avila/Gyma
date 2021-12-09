@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo import models, api
+#from odoo.tools import amount_to_text_en
 
 
 class my_module(models.Model):
@@ -16,3 +18,12 @@ class my_module(models.Model):
     def _value_pc(self):
         for record in self:
             record.value2 = float(record.value) / 100
+
+
+"""class purchase_order(models.Model):
+    _inherit = 'purchase.order'
+
+    @api.depends('amount_total', 'currency_id')
+    def compute_text(self):
+        return amount_to_text_en(self.amount_total, self.currency_id.symbol)
+"""
