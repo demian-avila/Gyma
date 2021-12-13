@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Client_name",
+    'name': "Gyma",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -17,7 +17,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','point_of_sale','my_module'],
+    'depends': ['base','point_of_sale','client_name'],
 
     # always loaded
     'data': ['static/src/xml/client_name.xml'],
