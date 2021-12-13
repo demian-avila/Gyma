@@ -6,8 +6,8 @@ from odoo import models, api
 
 
 class my_module(models.Model):
-    _name = 'my_module.my_module'
-    _description = 'my_module.my_module'
+    _name = 'client_name.client_name'
+    _description = 'client_name.client_name'
 
     name = fields.Char()
     value = fields.Integer()

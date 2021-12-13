@@ -2,12 +2,12 @@
 
 from odoo import models, fields, api
 from odoo import models, api
-#from odoo.tools import amount_to_text_en
+
 
 
 class my_module(models.Model):
-    _name = 'my_module.my_module'
-    _description = 'my_module.my_module'
+    _name = 'client_name.client_name'
+    _description = 'client_name.client_name'
 
     name = fields.Char()
     value = fields.Integer()
@@ -19,11 +19,3 @@ class my_module(models.Model):
         for record in self:
             record.value2 = float(record.value) / 100
 
-
-"""class purchase_order(models.Model):
-    _inherit = 'purchase.order'
-
-    @api.depends('amount_total', 'currency_id')
-    def compute_text(self):
-        return amount_to_text_en(self.amount_total, self.currency_id.symbol)
-"""

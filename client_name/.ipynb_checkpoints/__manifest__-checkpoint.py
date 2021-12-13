@@ -14,7 +14,7 @@
     'website': "inbest.enterprises",
 
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '1.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base','point_of_sale','client_name'],
@@ -22,6 +22,6 @@
     # always loaded
     'data': ['static/src/xml/client_name.xml'],
     # only loaded in demonstration mode
-    'demo': [],
+    'demo': ['demo/demo.xml'],
     'qweb':['static/src/xml/client_name.xml']
 }
